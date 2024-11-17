@@ -1,0 +1,226 @@
+/* Container styles */
+.create-event {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.create-event h2 {
+  color: #2c3e50;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+  animation: slideDown 0.5s ease-out;
+}
+
+/* Form styles */
+.create-event-form {
+  background: white;
+  padding: 2.5rem;
+  border-radius: 15px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+  animation: slideUp 0.6s ease-out;
+}
+
+.create-event-form label {
+  display: block;
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+  color: #34495e;
+  animation: fadeIn 0.5s ease-out;
+}
+
+.create-event-image-preview {
+  width: 100px;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.create-event-image-preview img {
+  max-width: 60%;
+  border-radius: 4px;
+}
+
+.create-event-form input,
+.create-event-form textarea {
+  display: block;
+  width: 100%;
+  margin-top: 0.5rem;
+  padding: 1rem;
+  border: 2px solid #edf2f7;
+  border-radius: 10px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  background: #f8fafc;
+}
+
+.create-event-form textarea {
+  min-height: 150px;
+  resize: vertical;
+}
+
+.create-event-form input:focus,
+.create-event-form textarea:focus {
+  outline: none;
+  border-color: #4a90e2;
+  background: white;
+  box-shadow: 0 0 0 4px rgba(74, 144, 226, 0.1);
+  transform: translateY(-2px);
+}
+
+/* File input styling */
+.create-event-form input[type="file"] {
+  padding: 0.8rem;
+  background: #f8fafc;
+  cursor: pointer;
+}
+
+.create-event-form input[type="file"]:hover {
+  background: #edf2f7;
+}
+
+/* Number input specific styles */
+.create-event-form input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.create-event-form input[type="number"]::-webkit-outer-spin-button,
+.create-event-form input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Button container */
+.form-buttons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+  animation: slideUp 0.7s ease-out;
+}
+
+.form-buttons button {
+  flex: 1;
+  padding: 1rem;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.form-buttons button[type="submit"] {
+  background: #4a90e2;
+  color: white;
+}
+
+.form-buttons button[type="submit"]:hover {
+  background: #357abd;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(74, 144, 226, 0.3);
+}
+
+.form-buttons button[type="button"] {
+  background: #e2e8f0;
+  color: #2d3748;
+}
+
+.form-buttons button[type="button"]:hover {
+  background: #cbd5e0;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.form-buttons button:active {
+  transform: translateY(0);
+}
+
+/* Input placeholder styling */
+.create-event-form input::placeholder,
+.create-event-form textarea::placeholder {
+  color: #a0aec0;
+}
+
+/* Validation styles */
+.create-event-form input:invalid,
+.create-event-form textarea:invalid {
+  border-color: #feb2b2;
+}
+
+.create-event-form input:invalid:focus,
+.create-event-form textarea:invalid:focus {
+  border-color: #fc8181;
+  box-shadow: 0 0 0 4px rgba(252, 129, 129, 0.1);
+}
+
+/* Animations */
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .create-event {
+    padding: 1rem;
+  }
+  
+  .create-event-form {
+    padding: 1.5rem;
+  }
+  
+  .form-buttons {
+    flex-direction: column-reverse;
+  }
+  
+  .create-event-form input,
+  .create-event-form textarea {
+    font-size: 16px; /* Prevents zoom on mobile */
+  }
+}
+
+/* Loading state */
+.create-event-form.loading {
+  opacity: 0.7;
+  pointer-events: none;
+}
+
+/* Success state animations */
+.create-event-form.success input,
+.create-event-form.success textarea {
+  border-color: #48bb78;
+}
+
+/* Error state animations */
+.create-event-form.error input,
+.create-event-form.error textarea {
+  border-color: #f56565;
+}

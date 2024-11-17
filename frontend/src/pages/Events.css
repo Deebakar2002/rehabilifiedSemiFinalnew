@@ -1,0 +1,16 @@
+.events-page {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .events-page h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+  .loading {
+    text-align: center;
+    font-size: 1.5em;
+    color: #555;
+  }
+  

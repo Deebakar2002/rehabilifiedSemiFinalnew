@@ -1,0 +1,86 @@
+/* src/components/WhatWeTeach.css */
+
+.what-we-teach {
+    padding: 40px 20px;
+    background-color: #eaf4f8; /* Softer background color for contrast */
+}
+
+.what-we-teach__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.what-we-teach__title {
+    font-size: 2.8rem; /* Increased size for emphasis */
+    font-weight: bold; /* Make it bold */
+    color: #1e3a5f; /* Darker shade for contrast */
+    margin-bottom: 20px;
+}
+
+.what-we-teach__description {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    color: #333; /* Dark text for better readability */
+}
+
+.what-we-teach__card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* Adjusted for better spacing */
+}
+
+.what-we-teach__card {
+    position: relative;
+    width: 30%; /* Maintain size for larger cards */
+    margin: 15px; /* Increased margin for spacing */
+    overflow: hidden;
+    border-radius: 15px; /* More rounded corners for modern feel */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Deeper shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+}
+
+.what-we-teach__card-image {
+    height: 250px; /* Increased height for a more prominent image */
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.3s ease; /* Smooth scaling effect */
+}
+
+.what-we-teach__card-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(30, 61, 84, 0.85); /* Slightly transparent background */
+    padding: 20px;
+    opacity: 0;
+    transform: translateY(40px); /* Start slightly lower for fade-in effect */
+    transition: opacity 0.4s ease, transform 0.4s ease; /* Smooth transitions */
+}
+
+.what-we-teach__card:hover {
+    transform: scale(1.05) rotate(1deg); /* Add subtle rotation */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3); /* Increased shadow on hover */
+}
+
+.what-we-teach__card:hover .what-we-teach__card-image {
+    transform: scale(1.1); /* Scale image slightly on hover */
+}
+
+.what-we-teach__card:hover .what-we-teach__card-content {
+    opacity: 1;
+    transform: translateY(0); /* Move to original position on hover */
+}
+
+.what-we-teach__card-title {
+    font-size: 1.6rem; /* Slightly larger title */
+    margin: 0;
+    color: #fff; /* White text for contrast */
+}
+
+.what-we-teach__card-description {
+    font-size: 1rem;
+    margin: 5px 0 0 0;
+    color: #f0f0f0; /* Light color for description */
+}

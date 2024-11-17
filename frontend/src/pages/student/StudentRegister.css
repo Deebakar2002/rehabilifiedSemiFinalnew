@@ -1,0 +1,110 @@
+.student-register__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+  background-color: #f7f7f7;
+  min-height: 100vh;
+}
+
+.student-register__illustration-container {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+}
+
+.student-register__illustration {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.student-register__illustration-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.student-register__form-container {
+  flex: 1;
+  max-width: 400px;
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.student-register__form-container h2 {
+  text-align: left;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.student-register__input-group {
+  margin-bottom: 20px;
+}
+
+.student-register__input-group input[type="text"],
+.student-register__input-group input[type="email"],
+.student-register__input-group input[type="password"] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.student-register__button {
+  width: 100%;
+  padding: 12px;
+  background-color: #6a0dad;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.student-register__button:hover {
+  background-color: #580d9e;
+}
+
+.student-register__terms-text,
+.student-register__login-link {
+  text-align: center;
+  font-size: 14px;
+  color: #666;
+  margin-top: 15px;
+}
+
+.student-register__terms-text a,
+.student-register__login-link a {
+  color: #6a0dad;
+  text-decoration: none;
+}
+
+.student-register__message {
+  text-align: center;
+  font-size: 14px;
+  color: green;
+  margin-top: 20px;
+}
+
+/* Optional: Additional styling for error messages */
+.student-register__error-message {
+  color: red;
+  font-size: 14px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.student-register__success-message {
+  color: green;
+  font-size: 14px;
+  margin-top: 10px;
+  text-align: center;
+}

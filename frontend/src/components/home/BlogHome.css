@@ -1,0 +1,104 @@
+.blog-home {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.blog-home h1 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    animation: blog-home-fadeIn 1s ease-in-out;
+}
+
+.blog-home-slider {
+    position: relative;
+    overflow: hidden;
+}
+
+.slick-slide {
+    padding: 10px; /* Gap between the slides */
+    box-sizing: border-box; /* Ensures padding is included in width calculation */
+}
+
+.blog-home-post {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.blog-home-post-content {
+    background-color: #e9e9e9;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;  /* Ensure each post takes up 100% of the slide space */
+}
+
+.blog-home-image {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.blog-home-read-more {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.blog-home-read-more:hover {
+    background-color: #0056b3;
+}
+
+/* Arrow customization */
+.blog-home-custom-arrow {
+    background-color: #007bff;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    color: rgb(31, 47, 61);
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.slick-prev::before,
+.slick-next::before {
+    display: none; /* Hides the default arrows */
+}
+
+/* Animation */
+@keyframes blog-home-fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes blog-home-slideIn {
+    from { transform: translateX(100%); }
+    to { transform: translateX(0); }
+}
+
+.blog-home-animate-title {
+    animation: blog-home-fadeIn 1.2s ease-in-out;
+}
+
+.blog-home-animate-text {
+    animation: blog-home-fadeIn 1.5s ease-in-out;
+}
+
+.blog-home-animate-post {
+    animation: blog-home-slideIn 1s ease-in-out;
+}
+
+.slick-dots li button:before {
+    color: #007bff;
+}  

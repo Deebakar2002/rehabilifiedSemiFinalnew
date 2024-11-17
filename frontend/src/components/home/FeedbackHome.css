@@ -1,0 +1,142 @@
+/* General styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Testimonial Section */
+.feedback-home__testimonial {
+    position: relative;
+    padding: 50px 0;
+    color: #fff;
+}
+
+.feedback-home__bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
+
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Section Title */
+.section-title {
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.section-title__tagline {
+    display: block;
+    font-size: 16px;
+    color: #f39c12; /* Example color */
+    margin-bottom: 5px;
+}
+
+.section-title__title {
+    font-size: 32px;
+    font-weight: bold;
+    color: #fff;
+}
+
+/* Testimonial Navigation */
+.feedback-home__nav {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.swiper-button-prev, .swiper-button-next {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.swiper-button-prev i, .swiper-button-next i {
+    color: #333; /* Change icon color */
+}
+
+/* Testimonials Container */
+.feedback-home__bottom {
+    position: relative;
+}
+
+/* Swiper */
+.swiper-container {
+    overflow: hidden;
+}
+
+/* Single Testimonial */
+.feedback-home__single {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.feedback-home__single:hover {
+    transform: scale(1.05);
+}
+
+/* Client Image */
+.feedback-home__client-img img {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+}
+
+/* Ratings */
+.feedback-home__rating {
+    margin: 10px 0;
+}
+
+.icon-star {
+    color: #f39c12; /* Star color */
+}
+
+/* Testimonial Text */
+.feedback-home__text {
+    font-size: 16px;
+    margin: 15px 0;
+}
+
+/* Client Info */
+.feedback-home__client-info {
+    margin-top: 10px;
+}
+
+.feedback-home__client-name {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.feedback-home__client-sub-title {
+    font-size: 14px;
+    color: #ccc; /* Subtitle color */
+}
+
+/* Quote Icon */
+.feedback-home__quote-icon img {
+    width: 30px;
+    height: auto;
+    position: absolute;
+    top: 10px;
+    left: 10px; /* Adjust positioning */
+}

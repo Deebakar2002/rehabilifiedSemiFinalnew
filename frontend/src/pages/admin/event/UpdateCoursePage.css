@@ -1,0 +1,104 @@
+/* src/pages/admin/courses/UpdateCoursePage.css */
+
+/* General styling for the page */
+.update-course-page {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.update-course-page__title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
+}
+
+/* Section styling */
+.update-course-page__section {
+  margin-bottom: 30px;
+}
+
+.update-course-page__section-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #0056b3;
+  margin-bottom: 15px;
+}
+
+.update-course-page__label {
+  font-size: 14px;
+  font-weight: 500;
+  color: #555;
+  display: block;
+  margin: 10px 0 5px;
+}
+
+.update-course-page__input,
+.update-course-page__textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+.update-course-page__textarea {
+  height: 60px;
+  resize: vertical;
+}
+
+/* Content Item Styling */
+.update-course-page__content-item,
+.update-course-page__lecture-item,
+.update-course-page__video-item {
+  margin-top: 15px;
+  padding-left: 15px;
+  border-left: 3px solid #0056b3;
+}
+
+.update-course-page__subcontent-title {
+  font-size: 16px;
+  font-weight: 500;
+  color: #444;
+  margin-top: 10px;
+}
+
+/* Button styling */
+button {
+  display: inline-block;
+  background-color: #007bff;
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.update-course-page__submit-btn {
+  display: block;
+  width: 100%;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 20px;
+  background-color: #28a745;
+}
+
+.update-course-page__submit-btn:hover {
+  background-color: #218838;
+}

@@ -1,0 +1,114 @@
+/* Gradient Background & Animation */
+.user-management-card {
+  background: linear-gradient(135deg, #3e84dc, #8fafd6);
+  border-radius: 10px;
+  padding: 20px;
+  color: black;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 1s ease-in-out;
+  max-width: 90%;
+  margin: auto;
+  margin-top: 40px;
+  text-align: center;
+}
+
+/* Input Styling */
+.user-management-search-input {
+  width: 80%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: black;
+  font-size: 1rem;
+  transition: background-color 0.3s, border 0.3s;
+}
+
+.user-management-search-input:focus {
+  background-color: rgba(253, 245, 245, 0.2);
+  border: 2px solid #fff;
+  outline: none;
+}
+
+/* Student List Styling */
+.user-management-student-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.user-management-student-item {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s;
+}
+
+.user-management-student-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Image Styling */
+.user-management-student-item img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  object-fit: cover;
+}
+
+/* Student Information */
+.user-management-student-item h3 {
+  color: rgb(0, 0, 0);
+  margin: 0;
+}
+
+.user-management-student-item div {
+  color: #0e0303;
+  text-align: left;
+  flex: 1;
+  padding: 0 10px;
+}
+
+.user-management-student-item p {
+  margin: 5px 0;
+}
+
+/* Error Styling */
+.error-message {
+  background-color: rgba(255, 0, 0, 0.7);
+  padding: 10px;
+  color: white;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .user-management-student-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .user-management-search-input {
+    width: 100%;
+  }
+}

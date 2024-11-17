@@ -1,0 +1,277 @@
+/* Advanced Animations */
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(30px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideInRight {
+  0% { transform: translateX(-30px); opacity: 0; }
+  100% { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes floatingCard {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+  100% { transform: translateY(0); }
+}
+
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@keyframes shimmer {
+  0% { background-position: -1000px 0; }
+  100% { background-position: 1000px 0; }
+}
+
+/* Container Layout with Gradient Background */
+.user-detail-admin-container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 2.5rem;
+  background: linear-gradient(135deg, #f0f9ff 0%, #c2e1ff 100%);
+  border-radius: 1.5rem;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 0.8s ease-out;
+  position: relative;
+  overflow: hidden;
+}
+
+.user-detail-admin-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 5px;
+  background: linear-gradient(90deg, #3b82f6, #3783df, #bafdff);
+  background-size: 200% 200%;
+  animation: gradientBG 3s ease infinite;
+}
+
+/* Header Styles */
+.user-detail-admin-title {
+  font-size: 2.8rem;
+  background: linear-gradient(120deg, #1e40af, #3b82f6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 2.5rem;
+  text-align: center;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  animation: fadeIn 1s ease-out;
+}
+
+/* Profile Section Enhancement */
+.user-detail-admin-profile-pic {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  margin: 0 auto 2.5rem;
+  display: block;
+  object-fit: cover;
+  border: 4px solid #fff;
+  box-shadow: 0 8px 25px rgba(59, 130, 246, 0.2);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.user-detail-admin-profile-pic:hover {
+  transform: scale(1.08) rotate(2deg);
+  box-shadow: 0 12px 30px rgba(59, 130, 246, 0.3);
+}
+
+.user-detail-admin-name {
+  font-size: 2rem;
+  background: linear-gradient(120deg, #1e40af, #3b82f6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  margin-bottom: 2rem;
+  animation: fadeIn 1.2s ease-out;
+}
+
+.user-detail-admin-info {
+  font-size: 1.1rem;
+  color: #475569;
+  margin: 0.8rem 0;
+  padding: 1rem 1.5rem;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 0.8rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+  transition: all 0.3s ease;
+  animation: slideInRight 0.5s ease-out;
+  border-left: 4px solid #3b82f6;
+}
+
+.user-detail-admin-info:hover {
+  transform: translateX(8px) translateY(-2px);
+  background: #fff;
+  box-shadow: 0 6px 20px rgba(59, 130, 246, 0.1);
+}
+
+/* Enhanced Event Registration Section */
+.user-detail-admin-events-title {
+  font-size: 2rem;
+  color: #1e40af;
+  margin: 3rem 0 2rem;
+  padding-bottom: 0.8rem;
+  border-bottom: 3px solid #93c5fd;
+  position: relative;
+}
+
+.user-detail-admin-events-title::after {
+  content: '';
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 100px;
+  height: 3px;
+  background: #3b82f6;
+  animation: shimmer 2s infinite linear;
+}
+
+.user-detail-admin-events-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 2rem;
+  padding: 0.5rem;
+}
+
+.user-detail-admin-event-item {
+  background: linear-gradient(145deg, #ffffff, #f8fafc);
+  border-radius: 1.2rem;
+  padding: 2rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  animation: scaleIn 0.5s ease-out;
+  border: 1px solid rgba(59, 130, 246, 0.1);
+}
+
+.user-detail-admin-event-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 28px rgba(59, 130, 246, 0.15);
+  animation: floatingCard 3s ease-in-out infinite;
+}
+
+/* Enhanced Form Sections */
+.user-detail-admin-send-link-container,
+.user-detail-admin-upload-container {
+  margin: 2.5rem 0;
+  padding: 2.5rem;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 1.2rem;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.06);
+  border: 1px solid rgba(59, 130, 246, 0.1);
+  transition: all 0.3s ease;
+}
+
+.user-detail-admin-send-link-container:hover,
+.user-detail-admin-upload-container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 40px rgba(59, 130, 246, 0.1);
+}
+
+/* Enhanced Input Styles */
+.user-detail-admin-meeting-link-input,
+.user-detail-admin-meeting-date-input,
+.user-detail-admin-meeting-time-input {
+  width: 100%;
+  padding: 1rem 1.5rem;
+  margin-bottom: 1.2rem;
+  border: 2px solid #e2e8f0;
+  border-radius: 0.8rem;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.user-detail-admin-meeting-link-input:focus,
+.user-detail-admin-meeting-date-input:focus,
+.user-detail-admin-meeting-time-input:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.15);
+  transform: translateY(-2px);
+}
+
+/* Enhanced Button Styles */
+.user-detail-admin-send-button,
+.user-detail-admin-upload-button {
+  background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+  color: #fff;
+  padding: 1rem 2.5rem;
+  border: none;
+  border-radius: 0.8rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3);
+}
+
+.user-detail-admin-send-button:hover,
+.user-detail-admin-upload-button:hover {
+  background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(59, 130, 246, 0.4);
+}
+
+/* Enhanced Status Styles */
+.user-detail-admin-event-status {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+}
+
+.user-detail-admin-event-status[data-status="paid"],
+.user-detail-admin-event-status[data-status="completed"] {
+  background: linear-gradient(135deg, #86efac 0%, #4ade80 100%);
+  color: #065f46;
+}
+
+.user-detail-admin-event-status[data-status="pending"] {
+  background: linear-gradient(135deg, #fde68a 0%, #fcd34d 100%);
+  color: #92400e;
+}
+
+/* Enhanced Message Styles */
+.user-detail-admin-send-link-message,
+.user-detail-admin-upload-message {
+  margin-top: 1.5rem;
+  padding: 1rem 1.5rem;
+  border-radius: 0.8rem;
+  font-size: 1.1rem;
+  animation: slideInRight 0.4s ease-out;
+  background: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%);
+  color: #1e40af;
+  border-left: 4px solid #3b82f6;
+}
+
+/* Responsive Enhancement */
+@media (max-width: 768px) {
+  .user-detail-admin-container {
+    margin: 1rem;
+    padding: 1.5rem;
+  }
+
+  .user-detail-admin-events-list {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .user-detail-admin-title {
+    font-size: 2.2rem;
+  }
+
+  .user-detail-admin-profile-pic {
+    width: 140px;
+    height: 140px;
+  }
+}

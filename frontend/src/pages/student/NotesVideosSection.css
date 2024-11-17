@@ -1,0 +1,62 @@
+.notes-videos-section {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .section-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .section-subtitle {
+    font-size: 1.4rem;
+    color: #555;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .notes-list, .videos-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .note-item {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .note-item a {
+    text-decoration: none;
+    color: #1e88e5;
+    font-weight: 500;
+  }
+  
+  .note-item a:hover {
+    text-decoration: underline;
+  }
+  
+  .video-item {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .video-item h4 {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 8px;
+  }
+  
+  .video-player {
+    width: 100%;
+    max-width: 100%;
+    border-radius: 8px;
+  }
+  

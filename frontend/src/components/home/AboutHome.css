@@ -1,0 +1,182 @@
+/* Main container styling */
+.about-home {
+    padding: 50px 0;
+    background-color: #f4f8fb;
+  }
+  
+  /* Container styling */
+  .about-home-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  
+  /* Row styling */
+  .about-home-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  
+  /* Columns styling */
+  .about-home-col {
+    flex: 1;
+    padding: 15px;
+  }
+  
+  /* Left-side Image Styling */
+  .about-home-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .about-home-image img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .about-home-image img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Right-side Content Styling */
+  .about-home-content {
+    text-align: left;
+    animation: fadeInUp 0.8s ease-in-out;
+  }
+  
+  .about-home-section-title h3 {
+    font-size: 20px;
+    color: #007bff;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  .about-home-section-title h2 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  .about-home-section-title h2 span {
+    color: #007bff;
+  }
+  
+  .about-home-section-title p {
+    color: #666;
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  
+  /* Feature List Styling */
+  .about-home-body {
+    margin-top: 20px;
+  }
+  
+  .about-home-list-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+  }
+  
+  .about-home-list-item:hover {
+    transform: translateX(10px);
+  }
+  
+ /* Icon Box Styling */
+.about-home-icon-box {
+    width: 60px;
+    height: 40px;
+    background: linear-gradient(135deg, #20364f, #0056b3); /* Gradient background */
+    color: #171515;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%; 
+    font-size: 24px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Adds a shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-right: 1rem;
+  }
+  
+  /* Hover Effect */
+  .about-home-list-item:hover .about-home-icon-box {
+    transform: scale(1.1); /* Slightly larger on hover */
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3); /* Intensified shadow on hover */
+    background: linear-gradient(135deg, #0056b3, #003d7a); /* Darker gradient on hover */
+  }
+  
+  
+  .about-home-list-content h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 5px;
+  }
+  
+  .about-home-list-content p {
+    color: #666;
+    font-size: 15px;
+    line-height: 1.6;
+  }
+  
+  /* Inquiry Button */
+  .about-home-appointment-btn {
+    margin-top: 30px;
+  }
+  
+  .about-home-appointment-btn a {
+    display: inline-block;
+    padding: 12px 30px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .about-home-appointment-btn a:hover {
+    background-color: #0056b3;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Fade-in Animation */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 992px) {
+    .about-home-row {
+      flex-direction: column;
+    }
+  
+    .about-home-image, .about-home-content {
+      text-align: center;
+    }
+  
+    .about-home-image img {
+      max-width: 90%;
+    }
+  
+    .about-home-list-item {
+      justify-content: center;
+    }
+  }
+  
